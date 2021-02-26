@@ -17,13 +17,10 @@ public class TestUserprofile {
         Scanner sc = new Scanner(System.in);
         System.out.println("please enter your desired user name:");
         String userName = sc.nextLine();
-        
-        String genre="";
-
-        {
+               
             System.out.println("Please Select your favourite Genre.");
             System.out.println("Action, Adventure, Drama, Comedy,");            
-            genre = sc.nextLine();
+            String genre = sc.nextLine();
             
         
         UserID newUserID = new UserID(userName, genre);
@@ -31,7 +28,8 @@ public class TestUserprofile {
         userCount++;
         System.out.println("New User Added");
         System.out.println("UserName: " + userID);
+        System.out.println("Genre: " + genre);
 
     }//end run method        
-    }
+    
 }
